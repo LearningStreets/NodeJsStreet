@@ -1,4 +1,4 @@
-This file will let you know how to begin with NodeJs
+# This file will let you know how to begin with NodeJs Application
 
 1.  # Install NodeJs on your machine
 
@@ -38,7 +38,7 @@ This file will let you know how to begin with NodeJs
 
     3.4 Now check your working directory you will have package.json file created over there.
 
-4.  # Open the working directory in your visual studio code or any other IDE.
+4.  # Open the working directory in your visual studio code or any other IDE. (check helloworld_app.js file)
 
     4.1 Let's create 'app.js' file by adding new file and name as app.js and add below content
 
@@ -53,45 +53,6 @@ This file will let you know how to begin with NodeJs
 
 6.  # To start further we will use 'express' package that will help us to create the nodejs application. express is a framework which help us by providing basic building blocks for nodejs application.
 
-7.  # Let's install express package
+# Note: Please read - Express_Readme.md file to addon more things into this application
 
-    7.1 Installing express package as globally: npm install -g express
-
-    7.2 Let's install to our project as well. nodejsstreet> npm install express. Once this gets completed we can see an entry for "express" package in our package.json file under "dependencies".
-
-    7.3 Additional task, add "start" script in the package.json file under "scripts" property. Let's add below:
-    "start" : "node app.js"
-
-8.  # Modify app.js
-
-    8.1 Modify app.js file by adding below code:
-
-        var express = require('express');
-        var app = express();
-        var port = 3005;
-
-        app.get('/', function(req, res) {
-            res.send('Node: Hello World Program');
-        })
-
-        app.listen(port, function() {
-            console.log('Logging this - Node: Hello World Program')
-        })
-
-    8.2 Once done with modifying app.js file, open the cmd for the directory and run below command:
-    npm start
-
-    8.3 Open http://localhost:3005/ to see the message.
-
-9.  # We are all done now. Happy Coding!
-
-10. # Optional: Hot loading
-
-    10.1 To get real time changes on UI as soon as you modify your code(refresh is required on browser) then we need to install one package; nodemon.
-
-    10.2 npm install nodemon
-
-    10.3 Once above package is installed now, change the "start" script as below:
-    "start" : "nodemon app.js"
-
-    10.4 Re-run the npm start on command line and now you will have hot loading enabled in your code. Do check by modifying your message and save it. Refresh the browser. Bingo! it's changing like charm.
+# Note: Kindly read the NodeJsStreet_Readme.md file to understand the architecture of this application.

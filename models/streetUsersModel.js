@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-var dbConstants = require('../assets/constantFiles/dbConstants');
+var appConstants = require('../assets/constantFiles/appConstants');
 
 var streetUsersModel = new Schema(
     {
@@ -33,6 +33,6 @@ var streetUsersModel = new Schema(
 // module.exports = mongoose.model('streetUser',streetUserModel)
 
 // we are passing explicit collection name
-module.exports = mongoose.model('streetUsersModel',streetUsersModel, dbConstants.collection_StreetUsers)
+module.exports = mongoose.model('streetUsersModel',streetUsersModel, appConstants.collections.streetUsersCollection)
 
 
